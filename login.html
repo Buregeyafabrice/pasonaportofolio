@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
+  <title>Document</title>
+  <style>
+:root {
+  --clr-graylight: #faf2f6;
+  --clr-graymed: #78909c;
+  --clr-graydark: #37474f;
+  --clr-primary: #fe528a;
+  --clr-primaryhover: #fce4ec;
+  --clr-primaryfocus: #f48fb1;
+  --clr-primarydark: #6b2b5e;
+  --radius: 0.5rem;
+  --padding: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--clr-graydark);
+  background-color: #37474f;
+}
+
+body::before {
+  display: block;
+  position: absolute;
+  background-blend-mode: multiply;
+  opacity: 0.4;
+  filter: brightness(3);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10%;
+}
+
+.wrapper {
+  background: white;
+  width: 20rem;
+  padding: 2rem;
+  border-radius: var(--radius);
+  margin: 6rem auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.form-label {
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.form-input {
+  border: none;
+  background-color: var(--clr-graylight);
+  border-radius: var(--radius);
+  padding: var(--padding);
+  font-family: inherit;
+  color: inherit;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  transition: 250ms all ease-in;
+}
+
+.form-input:hover {
+  border: 1px solid var(--clr-primaryhover);
+  box-shadow: 0 0 5px var(--clr-primaryhover);
+  background: white;
+}
+
+.form-input:focus {
+  border: 1px solid var(--clr-primaryfocus);
+  box-shadow: 0 0 5px var(--clr-primaryhover);
+  background: white;
+}
+
+.form-input::placeholder {
+  color: var(--clr-graymed);
+}
+
+.btn-primary {
+  border: none;
+  background: var(--clr-primary);
+  color: white;
+  border-radius: var(--radius);
+  padding: var(--padding);
+  margin-top: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  width: 16rem;
+  cursor: pointer;
+  transition: 250ms all ease-in;
+}
+
+.btn-primary:hover {
+  background-color: var(--clr-primarydark);
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1 class='title'>Adimn Login  Form</h1>
+    <p class='description'></p>
+    <div class="form-group">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-input" placeholder="Enter your name">
+    </div>
+    <div class="form-group">
+      <label for="email" class="form-label">Email</label>
+      <input type="text" class="form-input" placeholder="Enter your email">
+    </div>
+    <button class="btn-primary">Submit</button>
+  </div>
+  <!--end of wrapper-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
